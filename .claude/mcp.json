@@ -1,0 +1,10 @@
+{
+    "mcpServers": {
+        "aseprite": {
+            "command": "node",
+            "args": [
+                "C:/Users/Alper/Desktop/aseprit-mcp/dist/index.js"
+            ]
+        }
+    }
+}

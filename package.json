@@ -1,0 +1,36 @@
+{
+  "name": "aseprite-lua-mcp",
+  "version": "0.1.1",
+  "description": "Lightweight MCP server that runs LLM-generated Lua scripts through Aseprite's headless CLI",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "aseprite-lua-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "mcp",
+    "aseprite",
+    "pixel-art",
+    "lua"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  }
+}
