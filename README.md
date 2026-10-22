@@ -1,4 +1,4 @@
-# aseprite-lua-mcp
+# aseprite-lua-mcp [![Reviewed by HOL Guard](https://img.shields.io/badge/HOL_Guard%20|%20Aseprite_Lua_MCP-2E5AAC?logo=shield&logoColor=white)](https://hol.org/guard/extensions/mcp.aseprite)
 
 A lightweight [Model Context Protocol](https://modelcontextprotocol.io) server that lets LLM agents create pixel art and animations in [Aseprite](https://www.aseprite.org) by writing **one complete Lua script** and running it headlessly with `aseprite --batch --script`.
 
