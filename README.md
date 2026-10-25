@@ -2,6 +2,14 @@
 
 A lightweight [Model Context Protocol](https://modelcontextprotocol.io) server that lets LLM agents create pixel art and animations in [Aseprite](https://www.aseprite.org) by writing **one complete Lua script** and running it headlessly with `aseprite --batch --script`.
 
+## What's New in v0.2.0
+
+- **Native Image Responses:** Scripts returning output images now automatically send inline base64 `image/png` content blocks for direct preview in supported clients.
+- **Existing Sprite Editing:** Added `input_filename` parameter to load existing sprites before executing scripts.
+- **Documentation Filtering:** `get_aseprite_lua_docs` now supports filtering by `class_name` (e.g., `Cel`, `Sprite`) or search terms to reduce token usage.
+- **Configurable Output Directory:** Environment variable `ASEPRITE_OUTPUT_DIR` (with `DEFAULT_OUTPUT_DIR` fallback).
+- **Startup Health Checks:** Auto-detects and logs Aseprite binary paths on startup.
+
 ## Why scripts instead of per-pixel tools?
 
 Most Aseprite integrations expose one IPC/tool call per operation (put pixel, draw line, add frame...). Every call costs tokens and a round-trip. This server exposes a single "run this script" tool instead:
