@@ -1,9 +1,0 @@
-# aseprite-mcp rules
-
-- ALWAYS generate pixel art by writing a complete Lua script and executing it with `execute_aseprite_script`. Never draw pixel by pixel or issue per-operation calls.
-- DO NOT explain your drawing strategy or write introductory/concluding prose text. Execute the tool IMMEDIATELY with the generated script.
-- If you are unsure about the Aseprite Lua API, call `get_aseprite_lua_docs` once before writing the script.
-- Put everything in a single script: create the sprite, draw (use loops and helper functions for lines, circles, rects, fills), set palette/layers/frames/tags, and export with `spr:saveCopyAs(...)`.
-- Pass `output_filename` with an absolute path; inside the script save to the `OUTPUT_PATH` global.
-- On error, read the stderr line number, fix the script, and re-run the whole script; NEVER fall back to per-pixel commands.
-- Use nearest-neighbor-safe sizes (small canvases like 16x16 to 64x64) and scale up only for previews.

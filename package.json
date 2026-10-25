@@ -1,6 +1,6 @@
 {
   "name": "aseprite-lua-mcp",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Lightweight MCP server that runs LLM-generated Lua scripts through Aseprite's headless CLI",
   "type": "module",
   "main": "dist/index.js",
